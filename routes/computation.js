@@ -3,6 +3,6 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
 let someNumber=Math.floor(Math.random()*100)
-res.render('compute', { result:'log applied to '+someNumber+' is '+Math.ceil(someNumber)});
+res.render('sh', { result:'log applied to '+someNumber+' is '+Math.ceil(someNumber)});
 });
 module.exports = router;
